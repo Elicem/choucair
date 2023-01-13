@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clonar repositorio') {
             steps {
-                git 'https://github.com/tu-usuario/tu-proyecto.git'
+                git 'https://github.com/Elicem/choucair.git'
             }
         }
         stage('Compilación') {
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Ejecutar pruebas') {
             steps {
-                sh './gradlew test --tests tu.paquete.de.pruebas.TestScreenplay'
+                sh './gradlew test --tests Runner.ordersRunner'
             }
         }
     }
