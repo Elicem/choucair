@@ -17,7 +17,7 @@ Feature: Modulo Ordenes
   @AddOrderFailed
   Scenario Outline: Crear una nueva orden errada
     Given El usuario ingresa a la aplicacion
-    When El usuario ingresa <user> y <password>
+    #When El usuario ingresa <user> y <password>
     And el usuario visualiza el Dashboard y hace clic en mas info
     And el usuario visualiza el modulo de ordenes y hace clic en el botón nueva orden
     And el usuario hace clic en grabar

@@ -13,7 +13,8 @@ pipeline {
         }
         stage('Ejecutar pruebas') {
             steps {
-                sh './gradlew test --tests Runner.ordersRunner'
+                sh './gradlew clean test'
+'
             }
         }
     }
